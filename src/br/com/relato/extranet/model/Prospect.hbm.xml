@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class name="br.com.relato.extranet.model.Prospect" table="prospect" dynamic-update="true">
+ 			<id name="id" column="idiprospect" type="java.lang.Integer">
+				<generator class="native"/>
+			</id>
+        	<property name="nome" column="nmscompleto" type="string"/>
+        	<property name="email" column="cdsemail" type="string"/>			
+        	<property name="endereco" column="dssendereco" type="string"/>
+        	<property name="bairro" column="nmsbairro" type="string"/>
+        	<property name="cidade" column="nmscidade" type="string"/>
+        	<property name="estado" column="nmsestado" type="string"/>			
+        	<property name="pais" column="nmspais" type="string"/>			
+        	<property name="cep" column="cdscep" type="string"/>
+        	<property name="telefone" column="cdstelefone" type="string"/>
+        	<property name="empresa" column="nmsempresa" type="string"/>
+        	<property name="ativo" column="opsativo" type="string"/>			
+        	<property name="descadastre" column="opsdescadastre" type="string"/>
+         </class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class name="br.com.relato.extranet.model.Histupdoc" table="histupdoc" dynamic-update="true">
+ 			<id name="idihistupdoc" column="IdiHistUpDoc" type="java.lang.Integer">
+				<generator class="native"/>
+			</id>
+  			<property name="idiusuarioinc" column="IdiUsuarioInc" type="integer"/>
+  			<property name="dhdupload" column="DhdUpload" type="timestamp"/>
+  			<property name="nmsassunto" column="NmsAssunto" type="string"/>
+  			<property name="dssobservacoes" column="DssObservacoes" type="string"/>
+  			<property name="nmsarquivo" column="NmsArquivo" type="string"/>
+  			<property name="idiusuario" column="idiusuarioprop" type="integer"/>
+  			<property name="dhdultimaatualizacao" column="DhdUltimaAtualizacao" type="timestamp"/>
+  			<property name="idiprincipal" column="IdiPrincipal" type="integer"/>
+        	<property name="opsarquivopublico" column="OpsArquivoPublico" type="string"/>
+         </class>
+</hibernate-mapping>

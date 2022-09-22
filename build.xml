@@ -1,0 +1,52 @@
+<project name="Gerador" default="deploy">
+	<path id="classpath">
+		<pathelement path="bin"/>
+		<fileset dir="lib">
+			<include name="**/*.jar"/>
+		</fileset>
+
+	</path>
+	
+	<target name="generate">
+		<java classname="br.com.relato.generator.Main" classpathref="classpath" fork="true" >
+			<jvmarg value="-enableassertions"/>
+			<jvmarg value="-Dbr.com.relato.encoding=ISO-8859-1"/>
+		</java>
+		<copy todir="output/src/lib">
+			<fileset dir="lib">
+				<include name="**/*.jar"/>
+			</fileset>
+		</copy>
+
+		<copy todir="output/web/WEB-INF/classes">
+			<fileset dir="skel/src">
+				<include name="**/*.conf"/>
+			</fileset>
+		</copy>
+
+		<ant dir="output"/>
+	</target>
+	
+	<target name="deploy" depends="generate, redeploy">
+	</target>
+	
+	<target name="redeploy">
+		<copy todir="/var/tomcat/webapps">
+			<fileset dir="output">
+				<include name="*.war"/>
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="deploylocal" depends="generate, redeploylocal">
+	</target>
+
+	<target name="redeploylocal">
+		<copy todir="C:\Program Files\Apache Software Foundation\Tomcat 7.0\webapps">
+			<fileset dir="output">
+				<include name="*.war"/>
+			</fileset>
+		</copy>
+	</target>
+
+</project>

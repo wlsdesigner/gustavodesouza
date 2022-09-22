@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class name="br.com.relato.extranet.model.Historicodownload" table="historicodownload" dynamic-update="true">
+ 			<id name="idihistoricodownload" column="idihistoricodownload" type="java.lang.Integer">
+				<generator class="native"/>
+			</id>
+  			<property name="dhdbaixa" column="dhdbaixa" type="timestamp"/>
+			<property name="idiusuario" column="idiusuario" type="java.lang.Integer"/>
+			<property name="idihistupdoc" column="idihistupdoc" type="java.lang.Integer"/>
+
+         </class>
+</hibernate-mapping>

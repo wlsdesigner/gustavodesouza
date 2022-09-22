@@ -1,0 +1,561 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+#header{
+	margin: 0;
+	width: 100%;
+	height: 70px;
+	padding: 1px;
+}
+
+#header #userInfo{
+	font-size: 8pt;
+	color: #065291;
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+#header #userInfo #link-sair a{
+	color: red;
+	font-weight: bold;
+	margin-left: 20px;
+	text-decoration: none;
+}
+
+#header #logo-simbolo{
+	width: 52px;
+	height: 58px;
+	float: left;
+	margin-top: 0;
+	margin-left: 10px;
+}
+
+#header #logo-nome{
+    background: url(../images/logo-nome.png) no-repeat;
+    width: 121px;
+	height: 35px;
+	float: left;
+	margin-top: 8px;
+	margin-left: 20px;
+    font-size: 16pt;
+}
+
+#header #barra-superior{
+	background: url(../images/fundo-painel.png) repeat-x;
+	border-top: 5px solid #065291;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	height: 25px;
+	width: 100%;
+	margin-top: 30px;
+	padding: 0;
+}
+ul {
+	padding: 0;
+}
+
+img {
+	border: 0;
+}
+
+.menu{
+    padding-top: 10px;
+}
+
+.menu .menu-item{
+    list-style:none;
+    border-bottom: 1px solid silver;
+}
+
+.menu .menu-item a:hover{
+    background-color: #E5E5E5;
+}
+
+.menu .menu-item a{
+    padding: 6px 10px 6px 3px;
+    font-size: 8pt;
+    text-decoration: none;
+    display: block;
+}
+
+/*** login ***/
+div#logo-simbolo{
+	width: 72px;
+	height: 78px;
+	float: left;
+	margin-top: 0;
+	margin-left: 0;
+}
+
+div#logo-nome{
+	background: url(../images/logo-nome.png) no-repeat;
+	width: 121px;
+	height: 35px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 0px;
+}
+
+div#logo-cdd{
+	float: right;
+}
+/* MESSAGES AND ERRORS */
+.errors,.message {
+	font-size: 0.8em;
+	line-height: 2;
+	margin: 1em 2em;
+	padding: 0.5em;
+}
+
+.message {
+	background: #f3f3ff;
+	border: 1px solid #b2d1ff;
+	color: #006dba;
+	-moz-box-shadow: 0 0 0.25em #b2d1ff;
+	-webkit-box-shadow: 0 0 0.25em #b2d1ff;
+	box-shadow: 0 0 0.25em #b2d1ff;
+}
+
+.errors {
+	background: #fff3f3;
+	border: 1px solid #ffaaaa;
+	color: #cc0000;
+	-moz-box-shadow: 0 0 0.25em #ff8888;
+	-webkit-box-shadow: 0 0 0.25em #ff8888;
+	box-shadow: 0 0 0.25em #ff8888;
+}
+
+.errors ul,.message {
+	padding: 0;
+}
+
+.errors li {
+	list-style: none;
+	background: transparent url(../images/skin/exclamation.png) 0 50%
+		no-repeat;
+	text-indent: 22px;
+}
+
+.message {
+	background: transparent url(../images/skin/information.png) 0 50%
+		no-repeat;
+	text-indent: 22px;
+}
+
+/* form fields with errors */
+.error input,.error select,.error textarea {
+	background: #fff3f3;
+	border-color: #ffaaaa;
+	color: #cc0000;
+}
+
+.error input:focus,.error select:focus,.error textarea:focus {
+	-moz-box-shadow: 0 0 0.5em #ffaaaa;
+	-webkit-box-shadow: 0 0 0.5em #ffaaaa;
+	box-shadow: 0 0 0.5em #ffaaaa;
+}
+
+/* same effects for browsers that support HTML5 client-side validation (these have to be specified separately or IE will ignore the entire rule) */
+input:invalid,select:invalid,textarea:invalid {
+	background: #fff3f3;
+	border-color: #ffaaaa;
+	color: #cc0000;
+}
+
+input:invalid:focus,select:invalid:focus,textarea:invalid:focus {
+	-moz-box-shadow: 0 0 0.5em #ffaaaa;
+	-webkit-box-shadow: 0 0 0.5em #ffaaaa;
+	box-shadow: 0 0 0.5em #ffaaaa;
+}
+
+/* FONT STACK */
+body,
+input, select, textarea {
+	font-family: "Lucida Grande", sans-serif;
+}
+
+/* FONT STACK */
+.spinner {
+	background: url(../images/spinner.gif) 50% 50% no-repeat transparent;
+	height: 16px;
+	width: 16px;
+	padding: 0.5em;
+	position: absolute;
+	top: 120px;
+	text-indent: -9999px;
+}
+
+
+.required-indicator {
+	color: #48802C;
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 0.3em;
+	position: relative;
+	top: 0.1em;
+}
+
+ul.one-to-many {
+	display: inline-block;
+	list-style-position: inside;
+	vertical-align: top;
+}
+
+.ie6 ul.one-to-many,.ie7 ul.one-to-many {
+	display: inline;
+	zoom: 1;
+}
+
+ul.one-to-many li.add {
+	list-style-type: none;
+}
+
+/* MESSAGES AND ERRORS */
+.errors,.message {
+	font-size: 0.8em;
+	line-height: 2;
+	margin: 1em 2em;
+	padding: 0.5em;
+}
+
+.message {
+	background: #f3f3ff;
+	border: 1px solid #b2d1ff;
+	color: #006dba;
+	-moz-box-shadow: 0 0 0.25em #b2d1ff;
+	-webkit-box-shadow: 0 0 0.25em #b2d1ff;
+	box-shadow: 0 0 0.25em #b2d1ff;
+}
+
+.errors {
+	background: #fff3f3;
+	border: 1px solid #ffaaaa;
+	color: #cc0000;
+	-moz-box-shadow: 0 0 0.25em #ff8888;
+	-webkit-box-shadow: 0 0 0.25em #ff8888;
+	box-shadow: 0 0 0.25em #ff8888;
+}
+
+.errors ul,.message {
+	padding: 0;
+}
+
+.errors li {
+	list-style: none;
+	background: transparent url(../images/skin/exclamation.png) 0 50%
+		no-repeat;
+	text-indent: 22px;
+}
+
+.message {
+	background: transparent url(../images/skin/information.png) 0 50%
+		no-repeat;
+	text-indent: 22px;
+}
+
+/* form fields with errors */
+.error input,.error select,.error textarea {
+	background: #fff3f3;
+	border-color: #ffaaaa;
+	color: #cc0000;
+}
+
+.error input:focus,.error select:focus,.error textarea:focus {
+	-moz-box-shadow: 0 0 0.5em #ffaaaa;
+	-webkit-box-shadow: 0 0 0.5em #ffaaaa;
+	box-shadow: 0 0 0.5em #ffaaaa;
+}
+
+/* same effects for browsers that support HTML5 client-side validation (these have to be specified separately or IE will ignore the entire rule) */
+input:invalid,select:invalid,textarea:invalid {
+	background: #fff3f3;
+	border-color: #ffaaaa;
+	color: #cc0000;
+}
+
+input:invalid:focus,select:invalid:focus,textarea:invalid:focus {
+	-moz-box-shadow: 0 0 0.5em #ffaaaa;
+	-webkit-box-shadow: 0 0 0.5em #ffaaaa;
+	box-shadow: 0 0 0.5em #ffaaaa;
+}
+
+
+
+/* PAGINATION */
+
+.pagination {
+	border-top: 0;
+	margin: 0;
+	padding: 0.3em 0.2em;
+	text-align: center;
+	   -moz-box-shadow: 0 0 3px 1px #AAAAAA;
+	-webkit-box-shadow: 0 0 3px 1px #AAAAAA;
+	        box-shadow: 0 0 3px 1px #AAAAAA;
+	background-color: #EFEFEF;
+}
+
+.pagination a,
+.pagination .currentStep {
+	color: #666666;
+	display: inline-block;
+	margin: 0 0.1em;
+	padding: 0.25em 0.7em;
+	text-decoration: none;
+	   -moz-border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	        border-radius: 0.3em;
+}
+
+.pagination a:hover, .pagination a:focus,
+.pagination .currentStep {
+	background-color: #999999;
+	color: #ffffff;
+	outline: none;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.no-borderradius .pagination a:hover, .no-borderradius .pagination a:focus,
+.no-borderradius .pagination .currentStep {
+	background-color: transparent;
+	color: #444444;
+	text-decoration: underline;
+}
+
+/* ACTION BUTTONS */
+
+.buttons {
+	overflow: hidden;
+	padding: 0.3em;
+	margin: 0.1em 0 0 0;
+	border: none;
+	line-height: 25px;
+}
+
+.buttons input,
+.buttons a {
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 0.25em 0;
+	overflow: visible;
+	padding: 0.25em 0.7em;
+	text-decoration: none;
+	line-height: 25px;
+}
+
+.buttons .delete, .buttons .edit, .buttons .save, .buttons .cancel, .buttons .ativar, .buttons .calcular {
+	background-position: 0.7em center;
+	background-repeat: no-repeat;
+	text-indent: 25px;
+}
+
+.buttons .delete {
+	background-image: url(../images/skin/database_delete.png);
+}
+
+.buttons .calcular {
+	background-image: url(../images/skin/database_calculadora.png);
+}
+
+.buttons .edit {
+	background-image: url(../images/skin/database_edit.png);
+}
+
+.buttons .save {
+	background-image: url(../images/skin/database_save.png);
+}
+
+.buttons .ativar {
+	background-image: url(../images/skin/ativar.png);
+}
+
+.buttons .pesquisar {
+	background-image: url(../images/skin/pesquisar.png);
+}
+
+.buttons .cancel {
+	background-image: url(../images/skin/database_cancel.png);
+}
+
+a.skip {
+	position: absolute;
+	left: -9999px;
+}
+
+a.forgot-pass {
+    float: right;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+p.forgot-pass {
+    float: right;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+
+legend.titulo-popup{
+	padding-bottom: 5px;
+	border-bottom: 2px solid #065291;
+	color: #065291;
+}
+
+/*utilizado no cadastro de processos*/
+legend.subtitulo{
+	padding-bottom: 5px;
+	border-bottom: 2px solid #065291;
+	color: #065291;
+}
+
+textarea.grande {
+	width: 300px;
+	height: 100px;
+	overflow: auto; /* IE always renders vertical scrollbar without this */
+	vertical-align: top;
+}
+
+
+
+
+
+
+/*** relatorio ***/
+#divRelatorio{
+	padding: 10px;
+}
+
+#divRelatorio h1{
+	border-top: 2px solid silver;
+	border-bottom: 2px solid silver;
+}
+
+#divRelatorio h2{
+	border-bottom: 2px solid silver;
+}
+
+#divRelatorio #cabecalho{
+	width: 100%;
+}
+
+#divRelatorio #tabela{
+	width: 100%;
+}
+
+#divRelatorio #tabela tr th{
+	text-align: left;
+	width: 150px;
+}
+
+#divRelatorio #tabela tr th, #divRelatorio #tabela tr td{
+	padding: 0px 0px 0px 0px;
+}
+
+#divRelatorio .tabela-lista{
+	width: 100%;
+	
+}
+
+#divRelatorio .tabela-lista th{
+	border: 1px solid silver;
+	
+}
+
+#divRelatorio .tabela-lista th, #divRelatorio .tabela-lista td{
+	padding: 0;
+	margin: 0;
+}
+
+.box-somar{
+    font-size: 8pt;
+    text-align: center;
+    border-top: 1px solid #B3B3B3;
+    padding-top: 10px;
+}
+
+span.etiqueta {
+    padding: 3px 7px 3px 7px;
+    border: 1px solid silver;
+    background-color: #E9E9E9;
+    text-decoration: none;
+    color: #363636;
+    -moz-border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    border-radius: 0.3em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+span.etiqueta a{
+    color: #000;
+    text-decoration: none;
+}
+
+span.etiqueta.pago{
+    text-decoration:none;
+    background-color: green;
+    color: #FFF;
+    -moz-border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    border-radius: 0.3em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+span.etiqueta.pago a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.tabelaRelatorio{
+    border: 1px solid #000;
+}
+
+.tabelaRelatorio tr td, .tabelaRelatorio tr th{
+    border: 1px solid #000;
+    padding: 3px;
+}
+
+/** arquivos upload **/
+.arquivo{
+    float: left;
+    margin: 10px;
+    border: 1px solid silver;
+    -moz-border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    border-radius: 0.3em;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    padding: 3px;
+}
+
+.spanBotao{
+    padding-top: 16px;
+}
+
+.corpoPesquisa{
+    overflow: auto;
+    height: 300px;
+}
+
+select:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus{
+    background-color: #ffffca;
+}

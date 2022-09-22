@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+        <class name="br.com.relato.extranet.model.Usuario" table="usuario" dynamic-update="true">
+ 			<id name="id" column="IdiUsuario" type="java.lang.Integer">
+				<generator class="native"/>
+			</id>
+  			<property name="nome" column="NmsCompleto" type="string"/>
+  			<property name="login" column="CdsPadrao" type="string"/>
+  			<property name="pass" column="CdsSenha" type="string"/>
+  			<property name="email" column="CdsEmail" type="string"/>			
+  			<property name="ativo" column="OpsAtivo" type="string"/>			
+  			<property name="admin" column="OpsAdministrador" type="string"/>			
+			<property name="publicador" column="OpsPublicador" type="string"/>			
+			<property name="editor" column="opseditor" type="string"/>
+			<property name="dataultimaatualizacao" column="DhdUltimaAtualizacao" type="timestamp"/>			
+			<property name="idiprincipal" column="IdiPrincipal" type="java.lang.Integer"/>
+         </class>
+</hibernate-mapping>
